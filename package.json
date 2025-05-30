@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
     "file-saver": "^2.0.5",
     "framer-motion": "^12.15.0",
+    "gh-pages": "^6.3.0",
     "html2pdf.js": "^0.10.3",
     "jspdf": "^3.0.1",
     "jszip": "^3.10.1",
